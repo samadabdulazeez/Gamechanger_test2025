@@ -28,7 +28,7 @@ def run_gamechanger_and_dashboard():
             # capture_output=False means stdout/stderr of gamechanger.py will be streamed to the console
             # check=True means if gamechanger.py returns a non-zero exit code (an error), it will raise an exception
             process_gamechanger = subprocess.run(gamechanger_command, check=True, capture_output=False, text=True)
-            print(f"\n✅ {league} processing completed successfully!")
+            print(f"\n {league} processing completed successfully!")
         
         print("\n--- GameChanger ETL & EDA Process Finished Successfully! ---")
         print("Data processed and plots saved for all leagues. Preparing to launch dashboard...")
